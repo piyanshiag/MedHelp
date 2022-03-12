@@ -1,0 +1,160 @@
+*
+{
+	padding:0;
+	margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header{
+	background-image: url(home.jpg);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.welcome{
+	padding:50px 100px;
+	margin-top: -140px;
+	background-color: #fff;
+	box-shadow: 0 0 0 20px 7px rgba(0,0,0,0.2);
+}
+.welcome{
+	padding: 50px 100px;
+	margin-top: -140px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+}
+.welcome h1{
+	color:#333;
+}
+.welcome .home-btn{
+	margin-top: 10px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: #013f72
+}
+.welcome .btn:focus{
+	box-shadow: none;
+}
+#about{
+	padding:0px 0px;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+#about .content{ 
+ -webkit-display: flex;
+ display: flex;
+}
+#about .content .box{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+#about .content .box .inner{
+	background-color:#fff;
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2)
+}
+#about .content .box:nth-child(2) .inner{
+	background-color: #fff;
+}
+#about .content .box .inner .img img{
+	width: 100%;
+}
+#about .content .box .inner .text{
+	padding:30px;
+	text-align: left;
+}
+
+#about .content .box .inner .text h4{
+  font-size: 20px;
+  margin:0;
+  padding: 0px 0px 15px;
+  font-weight: 500;
+  
+ text-transform: capitalize;
+  text-align: center;
+}
+#about .content .box .inner .text p{
+	font-size: 15px;
+	line-height:20px;
+	
+	text-align: center;
+	margin:0;
+	
+}
+.about .check{
+	margin-top: 10px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: #013f72
+	
+}
+.about .btn:focus{
+	box-shadow: none;
+}
+
+
+.tips{
+	background-color: #013f72;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.tips .content{
+	
+	display: flex;
+	align-items: center;
+	
+}
+
+.tips .content .box{
+	
+	max-width: 100%;
+	padding-left: 425px;
+	padding-right: 400px;
+	
+}
+
+
+.tips .content .text h2{
+	font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+    text-align: center;
+}
+
+.tips .content .text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+
+    
+}
+
+#tip{
+	background-color: #efefef;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#tip .col-md-4{
+	padding:20px;
+	text-align: center;
+}
+#tip .col-md-4 h4{
+	padding:5px;
+	text-align: center;
+}
+#tip .col-md-4 img{
+	width: 50px;
+}
+
+#tip .col-md-4 p{
+	padding: 5px;
+}

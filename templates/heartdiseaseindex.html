@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            background-color: lightpink;
+        }
+        
+        form {
+            width: 1000px;
+            border: 1px solid gray;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Know If You Are Affected By Heart Disease Or Not</h1>
+
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="mb-3">
+                <b>Enter Chest Pain Rate</b>
+                <input type="number" name="chestpain" max="4" min="1" placeholder="Enter a number from 1-4" required="required" />
+            </div>
+            <br>
+            <div class="mb-3">
+                <b>Enter Blood Pressure Rate</b>
+                <input type="number" name="bp" max="200" min="95" placeholder="Enter a number from 95-200" required="required" />
+            </div>
+            <br>
+            <div class="mb-3">
+                <b>Enter Cholestrol Rate</b>
+                <input type="number" name="cholestrol" min="125" max="565" placeholder="Enter a number from 125-565" required="required" />
+            </div>
+            <br>
+            <div class="mb-3">
+                <b>Enter Maximum Heart Rate</b> (Range - [70-200])
+                <input type="number" name="maxhr" min="70" max="200" placeholder="Enter a number from 70-200" required="required" />
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br>
+        <br> {{ prediction_text }}
+
+    </div>
+
+</body>
+
+</html>
